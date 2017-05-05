@@ -1,0 +1,59 @@
+@import 'normalize.css';
+@import 'layout';
+
+.button {
+	width: 150px;
+	height: 50px;
+	display: block;
+	margin: 25px auto;
+	font-size: 18px;
+	color: #fff;
+	background-color: #F87861;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	transition: .2s ease-in;
+	text-transform: capitalize;
+	&:hover {
+		border-color: #FF5733;
+		background-color: #F4B6AB;
+		color: #FF5733;
+	}
+}
+
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 300px;
+	background-color: #ffffff;
+	display: none;
+	padding: 25px;
+	border: 2px solid #F87861;
+	border-radius: 5px;
+	text-align: center;
+	background-color: #F4B6AB;
+	color: #fff;
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+
+.title {
+	color: #F87861;
+	text-transform: capitalize;
+}
+
+.close {
+	background-color: transparent;
+	border: 2px solid transparent;
+	font-size: 25px;
+	color: #FF5733;
+	cursor: pointer;
+	outline: none;
+}
